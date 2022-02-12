@@ -1,0 +1,23 @@
+@use "vars";
+@use "../utils/screens" as *;
+
+@mixin colorClasses() {
+  @each $name, $valueClass in vars.$colorClassesName {
+    @each $className, $value in vars.$colors {
+      .#{$name}#{$className},
+      .hover\:#{$name}#{$className}:hover {
+        #{$valueClass}: $value;
+      }
+      @each $breakpointName, $breakpointValue in $breakpoints {
+        @media (min-width: $breakpointValue) {
+          .#{$breakpointName}\:#{$name}#{$className},
+          .#{$breakpointName}\:hover\:#{$name}#{$className}:hover {
+            #{$valueClass}: $value;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include colorClasses()

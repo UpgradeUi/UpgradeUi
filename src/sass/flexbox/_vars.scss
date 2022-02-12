@@ -1,0 +1,283 @@
+// Justify Content
+$justify-content: (
+  "jc-center": center,
+  "jc-start": start,
+  "jc-end": end,
+  "jc-flex-start": flex-start,
+  "jc-flex-end": flex-end,
+  "jc-left": left,
+  "jc-right": right,
+  "jc-normal": normal,
+  "jc-between": space-between,
+  "jc-around": space-around,
+  "jc-evenly": space-evenly,
+  "jc-stretch": stretch,
+  "jc-safe-center": safe center,
+  "jc-unsafe-center": unsafe center,
+  "jc-inherit": inherit,
+  "jc-initial": initial,
+  "jc-revert": revert,
+  "jc-unset": unset,
+);
+
+// Justify Items
+$justify-items: (
+  "ji-normal": normal,
+  "ji-stretch": stretch,
+  "ji-center": center,
+  "ji-start": start,
+  "ji-end": end,
+  "ji-flex-start": flex-start,
+  "ji-flex-end": flex-end,
+  "ji-self-start": self-start,
+  "ji-self-end": self-end,
+  "ji-left": left,
+  "ji-right": right,
+  "ji-baseline": baseline,
+  "ji-f-baseline": first baseline,
+  "ji-l-baseline": last baseline,
+  "ji-safe-center": safe center,
+  "ji-unsafe-center": unsafe center,
+  "ji-l-right": legacy right,
+  "ji-l-left": legacy left,
+  "ji-l-center": legacy center,
+  "ji-inherit": inherit,
+  "ji-initial": initial,
+  "ji-revert": revert,
+  "ji-unset": unset,
+);
+
+// Justify Self
+$justify-self: (
+  "js-auto": auto,
+  "js-normal": normal,
+  "js-stretch": stretch,
+  "js-center": center,
+  "js-start": start,
+  "js-end": end,
+  "js-flex-start": flex-start,
+  "js-flex-end": flex-end,
+  "js-self-start": self-start,
+  "js-self-end": self-end,
+  "js-left": left,
+  "js-right": right,
+  "js-baseline": baseline,
+  "js-f-baseline": first baseline,
+  "js-l-baseline": last baseline,
+  "js-safe-center": safe center,
+  "js-unsafe-center": unsafe center,
+  "js-inherit": inherit,
+  "js-initial": initial,
+  "js-revert": revert,
+  "js-unset": unset,
+);
+
+// Align Content
+$align-content: (
+  "ac-center": center,
+  "ac-start": start,
+  "ac-end": end,
+  "ac-flex-start": flex-start,
+  "ac-flex-end": flex-end,
+  "ac-normal": normal,
+  "ac-baseline": baseline,
+  "ac-first-baseline": first baseline,
+  "ac-last-baseline": last baseline,
+  "ac-between": space-between,
+  "ac-around": space-around,
+  "ac-evenly": space-evenly,
+  "ac-stretch": stretch,
+  "ac-safe-center": safe center,
+  "ac-unsafe-center": unsafe center,
+  "ac-inherit": inherit,
+  "ac-initial": initial,
+  "ac-revert": revert,
+  "ac-unset": unset,
+);
+
+// Align Items
+$align-items: (
+  "ai-normal": normal,
+  "ai-stretch": stretch,
+  "ai-center": center,
+  "ai-start": start,
+  "ai-end": end,
+  "ai-flex-start": flex-start,
+  "ai-flex-end": flex-end,
+  "ai-baseline": baseline,
+  "ai-first-baseline": first baseline,
+  "ai-last-baseline": last baseline,
+  "ai-safe-center": safe center,
+  "ai-unsafe-center": unsafe center,
+  "ai-inherit": inherit,
+  "ai-initial": initial,
+  "ai-revert": revert,
+  "ai-unset": unset,
+);
+
+// Align Self
+$align-self: (
+  "as-auto": auto,
+  "as-normal": normal,
+  "as-center": center,
+  "as-start": start,
+  "as-end": end,
+  "as-self-start": self-start,
+  "as-self-end": self-end,
+  "as-flex-start": flex-start,
+  "as-flex-end": flex-end,
+  "as-baseline": baseline,
+  "as-first-baseline": first baseline,
+  "as-last-baseline": last baseline,
+  "as-stretch": stretch,
+  "as-safe-center": safe center,
+  "as-unsafe-center": unsafe center,
+  "as-inherit": inherit,
+  "as-initial": initial,
+  "as-revert": revert,
+  "as-unset": unset,
+);
+
+// Place Content
+$place-content: (
+  "pc-center": center,
+  "pc-start": start,
+  "pc-end": end,
+  "pc-between": space-between,
+  "pc-around": space-around,
+  "pc-evenly": space-evenly,
+  "pc-stretch": stretch,
+);
+
+// Place Items
+$place-items: (
+  "pi-start": start,
+  "pi-end": end,
+  "pi-center": center,
+  "pi-stretch": stretch,
+);
+
+// Place Self
+$place-self: (
+  "ps-auto": auto,
+  "ps-start": start,
+  "ps-end": end,
+  "ps-center": center,
+  "ps-stretch": stretch,
+);
+
+// Flex
+$flex: (
+  "flex-1": 1 1 0%,
+  "flex-auto": auto,
+  "flex-initial": initial,
+  "flex-none": none,
+);
+
+// Flex Grow
+$flex-grow: (
+  "grow": 1,
+  "grow-1": 1,
+  "grow-0": 0,
+);
+
+// Flex Shrink
+$flex-shrink: (
+  "shrink": 1,
+  "shrink-1": 1,
+  "shrink-0": 0,
+);
+
+// Flex Orders
+$order: (
+  "order-0": 0,
+  "order-1": 1,
+  "order-2": 2,
+  "order-3": 3,
+  "order-4": 4,
+  "order-5": 5,
+  "order-6": 6,
+  "order-7": 7,
+  "order-8": 8,
+  "order-9": 9,
+  "order-10": 10,
+  "order-11": 11,
+  "order-12": 12,
+  "order-13": 13,
+  "order-14": 14,
+  "order-15": 15,
+  "order-16": 16,
+  "order-17": 17,
+  "order-18": 18,
+  "order-19": 19,
+  "order-20": 20,
+  "order--1": -1,
+  "order--2": -2,
+  "order--3": -3,
+  "order--4": -4,
+  "order--5": -5,
+  "order--6": -6,
+  "order--7": -7,
+  "order--8": -8,
+  "order--9": -9,
+  "order--10": -10,
+  "order--11": -11,
+  "order--12": -12,
+  "order--13": -13,
+  "order--14": -14,
+  "order--15": -15,
+  "order--16": -16,
+  "order--17": -17,
+  "order--18": -18,
+  "order--19": -19,
+  "order--20": -20,
+  "order-first": -99999999,
+  "order-last": 99999999,
+  "order-none": 0,
+);
+
+// Flex Wrap
+$flex-wrap: (
+  "nowrap": nowrap,
+  "flex-nowrap": nowrap,
+  "wrap-none": nowrap,
+  "flex-wrap": wrap,
+  "wrap": wrap,
+  "wrap-reverse": "wrap-reverse",
+  "flex-wrap-reverse": "wrap-reverse",
+);
+
+// Flex Direction
+$flex-direction: (
+  "flex-row": row,
+  "row": row,
+  "flex-row-reverse": row-reverse,
+  "row-reverse": row-reverse,
+  "flex-column": column,
+  "column": "column",
+  "flex-column-reverse": "column-reverse",
+  "column-reverse": "column-reverse",
+);
+
+// Flex Basis
+$flex-basis: (flex-basis, "basis-", 100, 0, 20);
+
+
+// AlingnmentList
+$alignmentList: (
+  "justify-content": $justify-content,
+  "justify-items": $justify-items,
+  "justify-self": $justify-self,
+  "align-content": $align-content,
+  "align-items": $align-items,
+  "align-self": $align-self,
+  "place-content": $place-content,
+  "place-items": $place-items,
+  "place-self": $place-self,
+  "flex-grow": $flex-grow,
+  "flex-shrink": $flex-shrink,
+  "flex": $flex,
+  "order": $order,
+  "flex-wrap": $flex-wrap,
+  "flex-direction": $flex-direction,
+);

@@ -1,0 +1,27 @@
+@use "vars";
+@use "../utils/mixins" as *;
+
+
+@mixin flexboxClassesMixin($flexboxClass) {
+  @include generateClasses(
+    $name: nth($flexboxClass, 1),
+    $short_name: nth($flexboxClass, 2),
+    $to: nth($flexboxClass, 3),
+    $fractions_to: nth($flexboxClass, 4),
+    $count: nth($flexboxClass, 5)
+  );
+
+  @include generateClasses(
+    $name: nth($flexboxClass, 1),
+    $short_name: nth($flexboxClass, 2),
+    $to: nth($flexboxClass, 3),
+    $fractions_to: 0,
+    $count: 10,
+    $firstPlus: 1,
+    $secondPlus: 5,
+    $type: 0%
+  );
+}
+
+@include manualClasses(vars.$alignmentList);
+@include flexboxClassesMixin(vars.$flex-basis);

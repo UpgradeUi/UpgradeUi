@@ -1,0 +1,121 @@
+// Paddings
+$padding: (padding, "p-", 100, 0);
+$padding-top: (padding-top, "pt-", 100, 20);
+$padding-bottom: (padding-bottom, "pb-", 100, 20);
+$padding-right: (padding-right, "pr-", 100, 20);
+$padding-left: (padding-left, "pl-", 100, 20);
+
+// Margins
+$margin: (margin, "m-", 100, 20);
+$margin-top: (margin-top, "mt-", 100, 20);
+$margin-bottom: (margin-bottom, "mb-", 100, 20);
+$margin-right: (margin-right, "mr-", 100, 20);
+$margin-left: (margin-left, "ml-", 100, 20);
+
+// Top - Bottom - Right - Left
+$top: (top, "t-", 100, 20);
+$bottom: (bottom, "b-", 100, 20);
+$right: (right, "r-", 100, 20);
+$left: (left, "l-", 100, 20);
+
+// Width - Height
+$width: (width, "w-", 100, 20);
+$min-width: (min-width, "min-w-", 100, 20);
+$max-width: (max-width, "max-w-", 100, 20);
+$height: (height, "h-", 100, 20);
+$min-height: (min-height, "min-h-", 100, 20);
+$max-height: (max-height, "max-h-", 100, 20);
+
+// Utility Classes
+$boxmodelClasses: (
+  $padding,
+  $padding-top,
+  $padding-bottom,
+  $padding-right,
+  $padding-left,
+  $margin,
+  $margin-top,
+  $margin-bottom,
+  $margin-right,
+  $margin-left,
+  $top,
+  $bottom,
+  $right,
+  $left,
+  $width,
+  $min-width,
+  $max-width,
+  $height,
+  $min-height,
+  $max-height
+);
+
+// Width
+$width: (
+  "w-full": 100%,
+  "w-screen": 100vw,
+  "w-vw": 100vw,
+  "w-max": max-content,
+  "w-min": min-content,
+  "w-fit": fit-content,
+  "w-auto": auto,
+);
+
+// Max Width
+$max-width: (
+  "max-w-full": 100%,
+  "max-w-max": max-content,
+  "max-w-min": min-content,
+  "max-w-fit": fit-content,
+  "max-w-none": none,
+);
+
+// Min Width
+$min-width: (
+  "min-w-full": 100%,
+  "min-w-max": max-content,
+  "min-w-min": min-content,
+  "min-w-fit": fit-content,
+);
+
+// Height
+$height: (
+  "h-full": 100%,
+  "h-screen": 100vh,
+  "h-vh": 100vh,
+  "h-max": max-content,
+  "h-min": min-content,
+  "h-fit": fit-content,
+  "h-auto": auto,
+);
+
+// Max Height
+$max-height: (
+  "max-h-full": 100%,
+  "max-h-screen": 100vh,
+  "max-h-vh": 100vh,
+  "max-h-max": max-content,
+  "max-h-min": min-content,
+  "max-h-fit": fit-content,
+  "max-h-none": none,
+);
+
+// Min Height
+$min-height: (
+  "min-h-full": 100%,
+  "min-h-screen": 100vh,
+  "min-h-vh": 100vh,
+  "min-h-max": max-content,
+  "min-h-min": min-content,
+  "min-h-fit": fit-content,
+);
+
+// Sizing
+$sizing: (
+  "width": $width,
+  "max-width": $max-width,
+  "min-width": $min-width,
+  "height": $height,
+  "max-height": $max-height,
+  "min-height": $min-height,
+);

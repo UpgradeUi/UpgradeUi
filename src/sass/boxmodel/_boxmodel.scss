@@ -1,0 +1,41 @@
+@use "vars";
+@use "../utils/mixins" as *;
+
+@mixin boxmodelClassesMixin($boxmodelClasses) {
+  $percentClasses: (
+    top,
+    bottom,
+    right,
+    left,
+    width,
+    min-width,
+    max-width,
+    height,
+    min-height,
+    max-height
+  );
+  @each $boxmodelClass in $boxmodelClasses {
+    @include generateClasses(
+      $name: nth($boxmodelClass, 1),
+      $short_name: nth($boxmodelClass, 2),
+      $to: nth($boxmodelClass, 3),
+      $fractions_to: nth($boxmodelClass, 4)
+    );
+
+    @if index($percentClasses, nth($boxmodelClass, 1)) {
+      @include generateClasses(
+        $name: nth($boxmodelClass, 1),
+        $short_name: nth($boxmodelClass, 2),
+        $to: nth($boxmodelClass, 3),
+        $fractions_to: 0,
+        $count: 10,
+        $firstPlus: 1,
+        $secondPlus: 5,
+        $type: 0%
+      );
+    }
+  }
+}
+
+@include boxmodelClassesMixin(vars.$boxmodelClasses);
+@include manualClasses(vars.$sizing)

@@ -262,7 +262,6 @@ $flex-direction: (
 // Flex Basis
 $flex-basis: (flex-basis, "basis-", 100, 0, 20);
 
-
 // AlingnmentList
 $alignmentList: (
   "justify-content": $justify-content,
@@ -281,4 +280,3 @@ $alignmentList: (
   "flex-wrap": $flex-wrap,
   "flex-direction": $flex-direction,
 );
-

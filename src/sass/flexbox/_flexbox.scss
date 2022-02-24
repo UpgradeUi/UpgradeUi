@@ -1,7 +1,6 @@
 @use "vars";
 @use "../utils/mixins" as *;
 
-
 @mixin flexboxClassesMixin($flexboxClass) {
   @include generateClasses(
     $name: nth($flexboxClass, 1),

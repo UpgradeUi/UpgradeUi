@@ -147,6 +147,11 @@ $colors: (
   "indianred700": $indianRed700,
   "indianred800": $indianRed800,
   "indianred900": $indianRed900,
+  "f100": $f100,
 );
 
-$colorClassesName: ("text-": color, "bg-": background-color, "border-": border-color);
+$colorClassesName: (
+  "text-": color,
+  "bg-": background-color,
+  "border-": border-color,
+);

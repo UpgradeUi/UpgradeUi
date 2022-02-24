@@ -1,4 +1,4 @@
-// display 
+// display
 $display: (
     "block": block,
     "inline": inline,
@@ -18,7 +18,7 @@ $display: (
     "block-grid": block grid,
     "block-flow-root": block flow-root,
     "table": table,
-    "table-row":  table-row,
+    "table-row": table-row,
     "list-item": list-item,
     "table-row-group": table-row-group,
     "table-header-group": table-header-group,
@@ -29,14 +29,14 @@ $display: (
     "table-caption": table-caption,
 );
 
-// float 
+// float
 $float: (
     "float-left": left,
     "float-right": right,
     "float-none": none,
     "float-inline-start": inline-start,
     "float-inline-end": inline-end,
-); 
+);
 
 // box-sizing
 $box-sizing: (
@@ -60,7 +60,7 @@ $visibility: (
     "collapse": collapse,
 );
 
-// overflow 
+// overflow
 $overflow: (
     "overflow-visible": visible,
     "overflow-hidden": hidden,
@@ -71,11 +71,10 @@ $overflow: (
 
 // layout
 $layout: (
-  "display": $display,
-  "float": $float,
-  "box-sizing": $box-sizing,
-  "position": $position,
-  "visibility": $visibility,
-  "overflow": $overflow,
+    "display": $display,
+    "float": $float,
+    "box-sizing": $box-sizing,
+    "position": $position,
+    "visibility": $visibility,
+    "overflow": $overflow,
 );
-

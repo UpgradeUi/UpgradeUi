@@ -2,18 +2,7 @@
 @use "../utils/mixins" as *;
 
 @mixin boxmodelClassesMixin($boxmodelClasses) {
-  $percentClasses: (
-    top,
-    bottom,
-    right,
-    left,
-    width,
-    min-width,
-    max-width,
-    height,
-    min-height,
-    max-height
-  );
+  $percentClasses: (top, bottom, right, left, width, min-width, max-width, height, min-height, max-height);
   @each $boxmodelClass in $boxmodelClasses {
     @include generateClasses(
       $name: nth($boxmodelClass, 1),
@@ -38,4 +27,4 @@
 }
 
 @include boxmodelClassesMixin(vars.$boxmodelClasses);
-@include manualClasses(vars.$sizing)
+@include manualClasses(vars.$sizing);

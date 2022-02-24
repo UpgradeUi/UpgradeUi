@@ -69,6 +69,18 @@ $overflow: (
     "overflow-auto": auto,
 );
 
+/* Generic break values */
+$break-after: (
+    "break-after-auto": auto,
+    "break-after-avoid": avoid,
+    "break-after-all": all,
+    "break-after-avoid-page": avoid-page,
+    "break-after-page": page,
+    "break-after-left": left,
+    "break-after-right": right,
+    "break-after-column": column,
+);
+
 // layout
 $layout: (
     "display": $display,
@@ -77,4 +89,5 @@ $layout: (
     "position": $position,
     "visibility": $visibility,
     "overflow": $overflow,
+    "break-after" $break-after,
 );

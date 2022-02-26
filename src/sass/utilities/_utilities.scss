@@ -1,0 +1,14 @@
+@use "vars";
+@use "../utils/mixins" as *;
+
+@include generateClasses(
+    $name: opacity,
+    $short_name: "opacity-",
+    $to: 100,
+    $secondPlus: 5,
+    $fractions_to: 0,
+    $count: 10,
+    $intOnly: true
+);
+
+@include manualClasses(vars.$utilities);

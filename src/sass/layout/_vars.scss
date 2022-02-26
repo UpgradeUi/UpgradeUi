@@ -69,6 +69,13 @@ $overflow: (
     "overflow-auto": auto,
 );
 
+$object-fit: (
+    "object-contain": contain,
+    "object-cover": cover,
+    "object-fill": fill,
+    "object-scale-down": scale-down,
+);
+
 // layout
 $layout: (
     "display": $display,

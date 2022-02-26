@@ -1,4 +1,13 @@
 @use "vars";
 @use "../utils/mixins" as *;
 
+@include generateClasses(
+    $name: z-index,
+    $short_name: "z-",
+    $to: 50,
+    $fractions_to: 0,
+    $secondPlus: 5,
+    $intOnly: true,
+);
+
 @include manualClasses(vars.$layout);

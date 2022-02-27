@@ -81,6 +81,18 @@ $break-after: (
     "break-after-column": column,
 );
 
+$break-before: (
+    "break-before-auto": auto,
+    "break-before-avoid": avoid,
+    "break-before-all": all,
+    "break-before-avoid-page": avoid-page,
+    "break-before-page": page,
+    "break-before-left": left,
+    "break-before-right": right,
+    "break-before-column": column,
+);
+
+
 // layout
 $layout: (
     "display": $display,
@@ -89,5 +101,7 @@ $layout: (
     "position": $position,
     "visibility": $visibility,
     "overflow": $overflow,
-    "break-after" $break-after,
+    "break-after": $break-after,
+    "break-before": $break-before,
 );
+

@@ -1,87 +1,90 @@
 @use "screens" as *;
 
 @mixin generateClasses(
-  $name,
-  $short_name,
-  $to,
-  $fractions_to,
-  $count: 10,
-  $firstPlus: 1,
-  $secondPlus: 4,
-  $number: 0,
-  $type: px
+	$name,
+	$short_name,
+	$to,
+	$fractions_to,
+	$count: 10,
+	$firstPlus: 1,
+	$secondPlus: 4,
+	$number: 0,
+	$type: px,
+	$intOnly: true
 ) {
-  $to: $to + 1;
-  @while $number < $to {
-    @if $number < $fractions_to {
-      @if $number % 1 != 0 {
-        @include returnClass($short_name, $name, $type, $number);
-      } @else {
-        @include returnClass($short_name, $name, $type, $number);
-      }
-      $number: $number + 0.5;
-    } @else {
-      @if $number < $count + 1 {
-        @include returnClass($short_name, $name, $type, $number);
-        @if $number < $count {
-          $number: $number + $firstPlus;
-        } @else {
-          $number: $number + $secondPlus;
-        }
-      } @else {
-        @include returnClass($short_name, $name, $type, $number);
-        $number: $number + $secondPlus;
-      }
-    }
-  }
+	$to: $to + 1;
+	@while $number < $to {
+		@if $number < $fractions_to {
+			@if $number % 1 != 0 {
+				@include returnClass($short_name, $name, $type, $number);
+			} @else {
+				@include returnClass($short_name, $name, $type, $number);
+			}
+			@if $intOnly {
+				$number: $number + 0.5;
+			}
+		} @else {
+			@if $number < $count + 1 {
+				@include returnClass($short_name, $name, $type, $number);
+				@if $number < $count {
+					$number: $number + $firstPlus;
+				} @else {
+					$number: $number + $secondPlus;
+				}
+			} @else {
+				@include returnClass($short_name, $name, $type, $number);
+				$number: $number + $secondPlus;
+			}
+		}
+	}
 }
 
 @mixin returnClass($short_name, $name, $type, $number) {
-  .#{$short_name}#{pxpercent($type, $number)},
-  .hover\:#{$short_name}#{pxpercent($type, $number)}:hover {
-    #{$name}: $number + $type;
-  }
+	.#{$short_name}#{pxpercent($type, $number)},
+	.hover\:#{$short_name}#{pxpercent($type, $number)}:hover {
+		#{$name}: $number + $type;
+	}
 
-  @each $breakpointName, $breakpointValue in $breakpoints {
-    @media (min-width: $breakpointValue) {
-      .#{$breakpointName}\:#{$short_name}#{pxpercent($type, $number)},
-      .#{$breakpointName}\:hover\:#{$short_name}#{pxpercent($type, $number)}:hover {
-        #{$name}: $number + $type;
-      }
-    }
-  }
+	@each $breakpointName, $breakpointValue in $breakpoints {
+		@media (min-width: $breakpointValue) {
+			.#{$breakpointName}\:#{$short_name}#{pxpercent($type, $number)},
+			.#{$breakpointName}\:hover\:#{$short_name}#{pxpercent($type, $number)}:hover {
+				#{$name}: $number + $type;
+			}
+		}
+	}
 }
 
 @function pxpercent($type, $number) {
-  @if $type == 0% {
-    @if $number % 1 != 0 {
-      @return floor($number) + \.5\%;
-    }
-    @return $number + \%;
-  } @else {
-    @if $number % 1 != 0 {
-      @return floor($number) + \.5;
-    }
-    @return $number;
-  }
+	@if $type == 0% {
+		@if $number % 1 != 0 {
+			@return floor($number) + \.5\%;
+		}
+		@return $number + \%;
+	} @else {
+		@if $number % 1 != 0 {
+			@return floor($number) + \.5;
+		}
+		@return $number;
+	}
 }
 
 @mixin manualClasses($lists) {
-  @each $name, $value in $lists {
-    @each $className, $value in $value {
-      .#{$className},
-      .hover\:#{$className}:hover {
-        #{$name}: $value;
-      }
+	@each $name, $value in $lists {
+		@each $className, $value in $value {
+			.#{$className},
+			.hover\:#{$className}:hover {
+				#{$name}: $value;
+			}
 
-      @each $breakpointName, $breakpointValue in $breakpoints {
-        @media (min-width: $breakpointValue) {
-          .#{$breakpointName}\:#{$className},
-          .#{$breakpointName}\:hover\:#{$className}:hover {
-            #{$name}: $value;
-          }
-        }
-      }
-    }
-  }
+			@each $breakpointName, $breakpointValue in $breakpoints {
+				@media (min-width: $breakpointValue) {
+					.#{$breakpointName}\:#{$className},
+					.#{$breakpointName}\:hover\:#{$className}:hover {
+						#{$name}: $value;
+					}
+				}
+			}
+		}
+	}
 }

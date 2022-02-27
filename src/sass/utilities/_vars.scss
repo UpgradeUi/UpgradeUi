@@ -1,0 +1,11 @@
+$shadow: (
+    "shadow-xs": 2px 0px 1px solid black,
+    "shadow-sm": 4px 0px 2px solid black,
+    "shadow": 8px 8px 2px solid black,
+    "shadow-lg": 10px 0px 4px solid black,
+    "shadow-xl": 14px 0px 4px solid black,
+);
+
+$utilities: (
+    "box-shadow": $shadow,
+);

@@ -69,7 +69,6 @@ $overflow: (
     "overflow-auto": auto,
 );
 
-/* Generic break values */
 $break-after: (
     "break-after-auto": auto,
     "break-after-avoid": avoid,
@@ -90,6 +89,15 @@ $break-before: (
     "break-before-left": left,
     "break-before-right": right,
     "break-before-column": column,
+);
+
+
+
+$object-fit: (
+    "object-contain": contain,
+    "object-cover": cover,
+    "object-fill": fill,
+    "object-scale-down": scale-down,
 );
 
 

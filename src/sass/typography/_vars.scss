@@ -1,0 +1,27 @@
+$font-style: (
+    "font-italic": italic,
+    "font-normat": normal,
+    "font-oblique": oblique,
+);
+
+$font-weight: (
+    "font-lighter": lighter,
+    "font-normal": normal,
+    "font-bold": bold,
+    "font-bolder": bolder,
+);
+
+$text-align: (
+    "text-justify": justify,
+    "text-start": start,
+    "text-end": end,
+    "text-center": center,
+    "text-right": right,
+    "text-left": left,
+);
+
+$typography: (
+    "font-style": $font-style,
+    "font-weight": $font-weight,
+    "text-align": $text-align,
+);

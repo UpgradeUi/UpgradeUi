@@ -1,0 +1,22 @@
+@use "vars";
+@use "../utils/mixins" as *;
+
+@include manualClasses(vars.$grid);
+@include generateClasses(
+    $name: nth(vars.$gap, 1),
+    $short_name: nth(vars.$gap, 2),
+    $to: nth(vars.$gap, 3),
+    $fractions_to: nth(vars.$gap, 4),
+);
+@include generateClasses(
+    $name: nth(vars.$row-gap, 1),
+    $short_name: nth(vars.$row-gap, 2),
+    $to: nth(vars.$row-gap, 3),
+    $fractions_to: nth(vars.$row-gap, 4),
+);
+@include generateClasses(
+    $name: nth(vars.$column-gap, 1),
+    $short_name: nth(vars.$column-gap, 2),
+    $to: nth(vars.$column-gap, 3),
+    $fractions_to: nth(vars.$column-gap, 4),
+);

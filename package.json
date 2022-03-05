@@ -1,13 +1,13 @@
 {
     "name": "upgradeui",
-    "version": "1.0.1-beta",
+    "version": "1.0.0-beta",
     "description": "🔮 Upgrade the UI of your website to the next level",
     "main": "index.js",
     "author": "UpgradeUI Team.",
     "license": "MIT",
     "style": "dist/upgrade.css",
     "files": [
-        "*.css"
+        "dist"
     ],
     "scripts": {
         "dev": "npx gulp"

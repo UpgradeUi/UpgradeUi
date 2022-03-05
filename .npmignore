@@ -1,4 +1,4 @@
-index.html
+example/**/*
 gulpfile.js
 
 # ignore src

@@ -1,7 +1,7 @@
 {
     "name": "upgradeui",
-    "version": "1.0.0",
-    "description": "ui framework",
+    "version": "1.0.1",
+    "description": "🔮 Upgrade the UI of your website to the next level",
     "main": "index.js",
     "author": "UpgradeUI Team.",
     "license": "MIT",

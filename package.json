@@ -1,34 +1,36 @@
 {
-  "name": "upgradeui",
-  "version": "1.0.0",
-  "description": "ui framework",
-  "main": "index.js",
-  "author": "UpgradeUI Team.",
-  "license": "MIT",
-  "style": "dist/upgrade.css",
-  "files": [
-      "*.css"
-  ],
-  "scripts": {
-      "dev": "npx gulp"
+    "name": "upgradeui",
+    "version": "1.0.0",
+    "description": "ui framework",
+    "main": "index.js",
+    "author": "UpgradeUI Team.",
+    "license": "MIT",
+    "style": "dist/upgrade.css",
+    "files": [
+        "*.css"
+    ],
+    "scripts": {
+        "dev": "npx gulp"
     },
-  "dependencies": {
-      "gulp": "^4.0.2"
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-sass": "^5.1.0",
+        "sass": "^1.49.9"
     },
     "repository": {
-    "type": "git",
-    "url": "git+https://github.com/upgradeui/upgradeui.git"
-  },
-  "keywords": [
-    "react",
-    "ui",
-    "css",
-    "upgradeui",
-    "upgrade",
-    "front-end"
-  ],
-  "bugs": {
-    "url": "https://github.com/upgradeui/upgradeui/issues"
-  },
-  "homepage": "https://github.com/upgradeui/upgradeui#readme"
+        "type": "git",
+        "url": "git+https://github.com/upgradeui/upgradeui.git"
+    },
+    "keywords": [
+        "react",
+        "ui",
+        "css",
+        "upgradeui",
+        "upgrade",
+        "front-end"
+    ],
+    "bugs": {
+        "url": "https://github.com/upgradeui/upgradeui/issues"
+    },
+    "homepage": "https://github.com/upgradeui/upgradeui#readme"
 }

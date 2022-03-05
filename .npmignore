@@ -1,0 +1,6 @@
+index.html
+gulpfile.js
+
+# ignore src
+
+src/**/*

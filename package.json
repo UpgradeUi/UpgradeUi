@@ -3,15 +3,32 @@
   "version": "1.0.0",
   "description": "ui framework",
   "main": "index.js",
+  "author": "UpgradeUI Team.",
+  "license": "MIT",
+  "style": "dist/upgrade.css",
+  "files": [
+      "*.css"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx gulp"
-  },
-  "author": "",
-  "license": "ISC",
+      "dev": "npx gulp"
+    },
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.49.7"
-  }
+      "gulp": "^4.0.2"
+    },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upgradeui/upgradeui.git"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "css",
+    "upgradeui",
+    "upgrade",
+    "front-end"
+  ],
+  "bugs": {
+    "url": "https://github.com/upgradeui/upgradeui/issues"
+  },
+  "homepage": "https://github.com/upgradeui/upgradeui#readme"
 }

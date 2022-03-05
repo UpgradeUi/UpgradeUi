@@ -1,0 +1,45 @@
+@use "vars";
+@use "../utils/mixins" as *;
+
+@include generateClasses(
+    $name: border-width,
+    $short_name: "border-",
+    $to: 10,
+    $fractions_to: 5,
+    $intOnly: false
+);
+
+@include generateClasses(
+    $name: border-top-width,
+    $short_name: "border-t-",
+    $to: 10,
+    $fractions_to: 5,
+    $intOnly: false
+);
+
+@include generateClasses(
+    $name: border-right-width,
+    $short_name: "border-r-",
+    $to: 10,
+    $fractions_to: 5,
+    $intOnly: false
+);
+
+@include generateClasses(
+    $name: border-bottom-width,
+    $short_name: "border-b-",
+    $to: 10,
+    $fractions_to: 5,
+    $intOnly: false
+);
+
+@include generateClasses(
+    $name: border-left-width,
+    $short_name: "border-l-",
+    $to: 10,
+    $fractions_to: 5,
+    $intOnly: false
+);
+
+
+@include manualClasses(vars.$border);

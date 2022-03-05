@@ -1,0 +1,13 @@
+$borderStyles: (
+    "border-dashed": dashed,
+    "border-dotted": dotted,
+    "border-double": double,
+    "border-groove": groove,
+    "border-hidden": hidden,
+    "border-ridge": ridge,
+    "border-solid": solid,
+);
+
+$border: (
+    "border-style": $borderStyles
+);
